@@ -1,0 +1,8 @@
+<h1>Billetes recibidos</h1>
+
+<h3 *ngIf="data[0].cantidad > 0" >Billetes de 500 {{data[0].cantidad}}</h3>
+<h3 *ngIf="data[1].cantidad > 0" >Billetes de 200 {{data[1].cantidad}}</h3>
+<h3 *ngIf="data[2].cantidad > 0" >Billetes de 100 {{data[2].cantidad}}</h3>
+<h3 *ngIf="data[3].cantidad > 0" >Billetes de 50  {{data[3].cantidad}}</h3>
+
+<button mat-button (click)="onNoClick()" >ok</button>

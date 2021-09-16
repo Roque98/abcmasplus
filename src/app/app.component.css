@@ -1,0 +1,10 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  
+}
+
+
+app-sidebar {
+  max-width: 250px;
+}

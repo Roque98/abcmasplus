@@ -1,34 +1,30 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+<nav class="navbar navbar-dark bg-success">
   <div class="container-fluid">
 
-    <!-- logo -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Boton para colapsar -->
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
-      <span class="navbar-toggler-icon"></span>
+    <!-- boton para colapsar sidebar -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" (click)="navbarOpen = !navbarOpen">
+      <span *ngIf="!navbarOpen" class="navbar-toggler-icon"></span>
+      <i *ngIf="navbarOpen" class="bi bi-chevron-left"></i>
     </button>
-    <!-- end Boton para colapsar -->
+
+    
+    <!-- logo -->
+    <div class="navbar-brand ms-2" href="#">Navbar</div>
 
 
-    <!-- contenido que se colapsa -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <!-- navbar -->
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <!-- navbar elements-->
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Home</a>
+      </li>
+      <!-- end navbar elements-->
+
+    </ul>
+    <!-- end navbar -->
 
 
-      <!-- navbar -->
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-
-        <!-- navbar elements-->
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <!-- end navbar elements-->
-
-      </ul>
-      <!-- end navbar -->
-
-    </div>
-    <!-- end contenido que se colapsa -->
 
   </div>
 </nav>
